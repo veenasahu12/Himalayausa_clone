@@ -1,0 +1,21 @@
+.nimages101{
+
+    transition: transform 1s;
+    overflow: hidden;
+}
+.nimages101:hover{
+ transform: scale(1.1); 
+}
+
+@media only screen and (min-width:0px) and (max-width:600px) {
+    .nimages101{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:1000px) {
+    .nimages101{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
