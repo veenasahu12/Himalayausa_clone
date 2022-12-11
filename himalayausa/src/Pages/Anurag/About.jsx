@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, HStack, VStack, Text, Box, Image, Button, Spacer, Link, Input } from '@chakra-ui/react';
+import { VStack, Text, Box, Image } from '@chakra-ui/react';
 import {
     Accordion,
     AccordionItem,

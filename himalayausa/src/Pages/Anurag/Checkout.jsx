@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Stack, HStack, VStack, Text, Box, Image, Button, Spacer, Link, Input } from '@chakra-ui/react'
+import React from "react";
+import { Stack, HStack, VStack, Text, Box, Button, Input } from '@chakra-ui/react'
 import CheckoutPayment from "../../Components/Anurag/CheckoutPayment";
 import styles from "./Checkout.module.css";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
@@ -8,11 +8,6 @@ const Checkout=()=>{
 
 
     const navigate= useNavigate()
-    // const StyleCheckoutBox = styled.div`
-    //     @media (min-width:0px) and (max-width: 600px){
-    //         grid-template-columns: 1;
-    //     }
-    // `
 
     const handleProceedPayment=()=>{
         setTimeout(()=>{
@@ -24,11 +19,6 @@ const Checkout=()=>{
         <div className={styles.mainBox_any}>
 
             <VStack   padding="2%"  spacing="3%" >
-
-               {/* <Box alignContent="left" padding="3% 0% 3% 6%" >
-                    <Image w="35%" h="auto" src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3734" /> 
-               </Box> */}
-
                <Box w="90%" >
                     <Text fontSize="small" fontWeight="bold" color="blackAlpha.700" fontStyle='system-ui' >Express Checkout</Text>
                     
@@ -95,5 +85,3 @@ const Checkout=()=>{
 }
 
 export default Checkout;
-
-//<Image w="31%" cursor="pointer" src="http://cdn.shopify.com/s/files/1/0887/6296/files/Untitled_6_480x480.png?v=1636747001" />

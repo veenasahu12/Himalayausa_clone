@@ -9,9 +9,7 @@ import {
   Text,
   Container,
   Button,
-  VStack,
 } from "@chakra-ui/react";
-// Here we have used react-icons package for the icons
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 // And react-slick as our Carousel Lib

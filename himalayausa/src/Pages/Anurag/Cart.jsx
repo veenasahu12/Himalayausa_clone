@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Stack, HStack, VStack, Text, Box, Image, Button, Spacer, Link, Input } from '@chakra-ui/react';
+import {  HStack, VStack, Text, Box, Image, Button } from '@chakra-ui/react';
 import styles from "./Cart.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -35,8 +35,6 @@ const Cart=()=>{
             axios.patch(`https://my-himalayausa-project.herokuapp.com/cart/${id}`,{
             count : y + x
         })
-        // .then((res)=>setCartData(res.data))
-        // .catch((err)=>console.log(err))
         fetchCartFunction()
     }
 
